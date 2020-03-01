@@ -6,10 +6,14 @@ public class MultiplicationSeries implements ISubscriber {
 	
 		int n =Integer.parseInt(input);
 		int result = n;
-		while(n>0) {
+		System.out.println(n);
+		
+		while(n>1) {
 			n-=1;
 			result =result *n;
-			
+			System.out.println(n);
+			System.out.println(result);
+
 		}
 		System.out.println(" is " + result );
 	}
