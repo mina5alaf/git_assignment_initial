@@ -6,7 +6,7 @@ public class SphereAreaSub implements ISubscriber{
 		int r = Integer.parseInt(input);// radius
 		double area;
 		area = 4 * 3.14 * (r*r); // 4Pi*r^2.
-		System.out.println(area);
+		System.out.println("Sphere Area with r = "+ r +": " + area);
 	}
 
 	
