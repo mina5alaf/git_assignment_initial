@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     private static ISubscriber subscribers [] = {
-            new SimpleSubscriber(),
-            new ReallySimpleSubscriber(),
             new LucasSeriesSub(),
     };
 
@@ -12,7 +10,6 @@ public class Main {
         for (ISubscriber sub : subscribers) {
             mathTopic.addSubscriber(sub);
         }
-        System.out.println("Enter Num Of Terms that you want : ");
         Scanner sc = new Scanner(System.in);
         String input = sc.next();
         mathTopic.dispatchEvent(input);
