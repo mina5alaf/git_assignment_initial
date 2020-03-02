@@ -3,8 +3,6 @@ import java.util.ArrayList;
 public class LucasSeriesSub implements ISubscriber {
     @Override
     public void notifySubscriber(String input) {
-        // TODO Auto-generated method stub
-        System.out.println("Hello, I am a simple subscriber and I am notified with " + input);
         int numOfTerms = Integer.parseInt(input);
         ArrayList<Integer>lucesResult = new ArrayList<Integer>();
         int temp1 = 2  , temp2 = 1;
@@ -32,7 +30,8 @@ public class LucasSeriesSub implements ISubscriber {
         }
         else
         {
-            lucesResult.add(0);
+            System.out.println("Not invalid Input");
+            System.exit(0);
         }
         System.out.println("The Series is : " + lucesResult);
     }
