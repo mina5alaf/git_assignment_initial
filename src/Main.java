@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 	private static ISubscriber subscribers [] = {
+			new CircleVolume(),
 		  new MultiplicationSeries(),
 			new CircleAreaObserver(),
 			new Power(),
