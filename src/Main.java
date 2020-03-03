@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class Main {
 	private static ISubscriber subscribers [] = {
-			new CircleCircumference()
-			new SphereAreaSub()
+			new CircleCircumference(),
+			new SphereAreaSub(),
+      new LucasSeriesSub()
 	};
 	public static void main(String[] args) {
 		Topic mathTopic = new Topic();
