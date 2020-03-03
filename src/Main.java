@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Main {
 	private static ISubscriber subscribers [] = {
+			new CircleCircumference(),
 			new CircleVolume(),
 		  new MultiplicationSeries(),
 			new CircleAreaObserver(),
 			new Power(),
 			new SphereVolume(),
-			new CircleCircumference(),
 			new SphereAreaSub(),
       new LucasSeriesSub()
 	};
