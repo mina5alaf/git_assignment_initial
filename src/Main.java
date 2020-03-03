@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
 	private static ISubscriber subscribers [] = {
 			new CircleCircumference()
+			new SphereAreaSub()
 	};
 	public static void main(String[] args) {
 		Topic mathTopic = new Topic();
